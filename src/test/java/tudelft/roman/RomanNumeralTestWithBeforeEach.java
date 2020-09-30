@@ -36,4 +36,11 @@ public class RomanNumeralTestWithBeforeEach {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void testWithoutNumber() {
+        int result = roman.convert("");
+
+        Assertions.assertEquals(0, result);
+    }
 }
